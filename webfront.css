@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+	background-color:#181818;
+	color:#535350;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+td{
+   margin: auto;
+   position: relative;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+}
