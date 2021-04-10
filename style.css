@@ -7,6 +7,8 @@ https://coolors.co/f06543-e8e9eb-e0dfd5-313638-f09d51
   box-sizing: border-box;
 }
 
+
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -33,6 +35,20 @@ a{
 	color: #FCFFFD;
 }
 
+td{
+	 width: 150px;
+	 height: 50px;
+	 margin: auto;
+	 position: relative;
+}
+
+ input {
+	width:70%;
+	height: 30px;
+	background-color: rgba(0,0,0,0);
+	color: white;
+ }
+
 .content {
   position: fixed;
   /* top: 10%;
@@ -43,8 +59,14 @@ a{
   padding: 50px;
 }
 
-.center {
+.logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
