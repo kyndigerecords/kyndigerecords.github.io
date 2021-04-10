@@ -1,0 +1,43 @@
+/* 
+https://coolors.co/2d2d2a-4c4c47-848fa5-c14953-e5dcc5
+https://coolors.co/1f1f1e-64b6ac-c0fdfb-daffef-fcfffd
+https://coolors.co/f06543-e8e9eb-e0dfd5-313638-f09d51
+ */
+* {
+  box-sizing: border-box;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body{
+	background-color:#181818;
+	color:#535350;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+
+
+	line-height: 1.6em;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #FCFFFD;
+}
+
+.content {
+  position: fixed;
+  bottom: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
