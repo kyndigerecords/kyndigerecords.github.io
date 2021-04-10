@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  cursor: none;
 }
 
 
@@ -47,9 +48,6 @@ td{
 
 .content {
   position: fixed;
-  /* top: 10%;
-  left: 20%;
-  background: rgba(30, 0, 0, 0.5); */
   color: #f1f1f1;
   width: 100%;
   padding: 50px;
@@ -66,3 +64,15 @@ td{
   margin-right: auto;
 }
 
+#cursor
+{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  cursor: none;
+}

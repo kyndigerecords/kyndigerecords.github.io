@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 body{
 	background-color:#181818;
 	color:#535350;
@@ -11,8 +19,9 @@ body{
 	font-weight: normal;
 }
 
-td{
+.borderTest{
    margin: auto;
    position: relative;
+   width: 200px;
 }
 
