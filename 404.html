@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kyndige Records</title>
+	<meta name="description" content="Kyndie Records">
+	<meta name="keywords" content="Podcast, Merch">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<video autoplay muted loop id="myVideo">
+	  	<source src="KyndigeBackground.mp4" type="video/mp4">
+	  	Your browser does not support HTML5 video.
+	</video>
+
+<div class="content">
+	<p class = "center">Whoops.. Error 404..<p>
+
+	<button><a href="index.html" id=returnIndex>Return to index page</a></button>
+
+
+
+<div id=cursor>
+			</div>
+			<script type="text/javascript">
+				var cursor = document.getElementById("cursor");
+				document.addEventListener("mousemove", function(e){
+					var x = e.clientX;
+					var y = e.clientY;
+					cursor.style.left = x + "px";
+					cursor.style.top = y + "px";
+				}
+				)
+				</script>
+
+
+</body>
+</html>
