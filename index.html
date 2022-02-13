@@ -52,30 +52,20 @@
 				}
 				)
 
-				/*#TODO - Gl hf med at OOP */
-				document.getElementById("ytBtn").addEventListener("mousemove",function(event){enterElementPod(event)})
-				function enterElementPod(e){document.getElementById("cursorIMG").src = "podcast.png"}
+				function btnEventListen(btnID, typeEvent, srcImg){
+					document.getElementById(btnID).addEventListener(typeEvent,function(event){enterElementPod(event)})
+					function enterElementPod(e){document.getElementById("cursorIMG").src = srcImg}					
+				}
 
-				document.getElementById("ytBtn").addEventListener("mouseleave",function(event){leaveElementPod(event)})
-				function leaveElementPod(e){document.getElementById("cursorIMG").src = "blank.png"}
+				btnEventListen("ytBtn", "mousemove", "podcast.png")
+				btnEventListen("ytBtn", "mouseleave", "blank.png")
+				btnEventListen("storeBtn", "mousemove", "store.png")
+				btnEventListen("storeBtn", "mouseleave", "blank.png")
+				btnEventListen("facebookBtn", "mousemove", "facebook.png")
+				btnEventListen("facebookBtn", "mouseleave", "blank.png")
+				btnEventListen("instaBtn", "mousemove", "instagram.png")
+				btnEventListen("instaBtn", "mouseleave", "blank.png")
 
-				document.getElementById("storeBtn").addEventListener("mousemove",function(event){enterElementStore(event)})
-				function enterElementStore(e){document.getElementById("cursorIMG").src = "store.png"}
-
-				document.getElementById("storeBtn").addEventListener("mouseleave",function(event){leaveElementStore(event)})
-				function leaveElementStore(e){document.getElementById("cursorIMG").src = "blank.png"}
-
-				document.getElementById("facebookBtn").addEventListener("mousemove",function(event){enterElementFace(event)})
-				function enterElementFace(e){document.getElementById("cursorIMG").src = "facebook.png"}
-
-				document.getElementById("facebookBtn").addEventListener("mouseleave",function(event){leaveElementFace(event)})
-				function leaveElementFace(e){document.getElementById("cursorIMG").src = "blank.png"}
-
-				document.getElementById("instaBtn").addEventListener("mousemove",function(event){enterElementInsta(event)})
-				function enterElementInsta(e){document.getElementById("cursorIMG").src = "insta.png"}
-
-				document.getElementById("instaBtn").addEventListener("mouseleave",function(event){leaveElementInsta(event)})
-				function leaveElementInsta(e){document.getElementById("cursorIMG").src = "blank.png"}
 			</script>
 	</div>
 
