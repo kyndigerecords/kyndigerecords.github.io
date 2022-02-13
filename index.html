@@ -49,22 +49,19 @@
 					var y = e.clientY;
 					cursor.style.left = x + "px";
 					cursor.style.top = y + "px";
-				}
-				)
+				})
 
-				function btnEventListen(btnID, typeEvent, srcImg){
+				function contextOnHover(btnID, typeEvent, srcImg){
 					document.getElementById(btnID).addEventListener(typeEvent,function(event){enterElementPod(event)})
-					function enterElementPod(e){document.getElementById("cursorIMG").src = srcImg}					
+					document.getElementById(btnID).addEventListener("mouseleave",function(event){leaveElementPod(event)})
+					function enterElementPod(e){document.getElementById("cursorIMG").src = srcImg}
+					function leaveElementPod(e){document.getElementById("cursorIMG").src = "blank.png"}
 				}
 
-				btnEventListen("ytBtn", "mousemove", "podcast.png")
-				btnEventListen("ytBtn", "mouseleave", "blank.png")
-				btnEventListen("storeBtn", "mousemove", "store.png")
-				btnEventListen("storeBtn", "mouseleave", "blank.png")
-				btnEventListen("facebookBtn", "mousemove", "facebook.png")
-				btnEventListen("facebookBtn", "mouseleave", "blank.png")
-				btnEventListen("instaBtn", "mousemove", "insta.png")
-				btnEventListen("instaBtn", "mouseleave", "blank.png")
+				contextOnHover("ytBtn", "mousemove", "podcast.png")
+				contextOnHover("storeBtn", "mousemove", "store.png")
+				contextOnHover("facebookBtn", "mousemove", "facebook.png")
+				contextOnHover("instaBtn", "mousemove", "insta.png")
 
 			</script>
 	</div>
