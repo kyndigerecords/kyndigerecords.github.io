@@ -52,10 +52,12 @@
 				})
 
 				function contextOnHover(btnID, typeEvent, srcImg){
+					var cursorImgId = document.getElementById("cursorIMG");
+
 					document.getElementById(btnID).addEventListener(typeEvent,function(event){enterElementPod(event)})
 					document.getElementById(btnID).addEventListener("mouseleave",function(event){leaveElementPod(event)})
-					function enterElementPod(e){document.getElementById("cursorIMG").src = srcImg}
-					function leaveElementPod(e){document.getElementById("cursorIMG").src = "blank.png"}
+					function enterElementPod(e){cursorImgId.src = srcImg}
+					function leaveElementPod(e){cursorImgId.src = "blank.png"}
 				}
 
 				contextOnHover("ytBtn", "mousemove", "podcast.png")
